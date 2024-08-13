@@ -1,0 +1,131 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#city-input {
+    padding: 10px;
+    width: 70%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+#search-btn, #location-btn {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+#search-btn:hover, #location-btn:hover {
+    background-color: #0056b3;
+}
+
+#unit-toggle {
+    margin-top: 10px;
+}
+
+#unit-toggle label {
+    margin: 0 10px;
+}
+
+#weather-info {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#weather-info p {
+    margin: 10px 0;
+}
+
+#weather-alerts {
+    margin-top: 20px;
+}
+
+.alert {
+    border: 1px solid #f00;
+    background-color: #fdd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.forecast {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.forecast-day {
+    text-align: center;
+    width: 14%;
+}
+
+.forecast-day i {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+#search-history {
+    margin-top: 20px;
+}
+
+#search-history button {
+    display: block;
+    margin: 5px auto;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#search-history button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    #city-input {
+        width: 60%;
+    }
+
+    #search-btn, #location-btn {
+        width: 30%;
+        margin-left: 2px;
+    }
+}
